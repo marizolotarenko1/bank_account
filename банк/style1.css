@@ -1,0 +1,121 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.container{
+    display: flex;
+    flex-direction: column;
+}
+.nav-list{
+    display: flex;  
+    flex-direction: row;
+    justify-content: flex-end;
+}
+.block1{
+    height: 60%;
+    margin: 10px 10px 10px 10px;
+    background-color: rgb(0, 101, 148);
+    color: rgb(255, 255, 255);
+    border-radius: 10px;
+}
+.block1 button{
+    color: rgb(255, 255, 255);
+    padding: 0;
+    border: none;
+    background: none;
+    height: 60px;
+    background-color: transparent;
+    border: 0;
+    color: white;
+}
+.nav-list button:hover {
+    background-color: rgb(73, 203, 207);
+}
+hr{
+    height: 1pt;
+    color: rgb(255, 255, 255);
+}
+body{
+    background-color: aliceblue;
+}
+main {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+.profile-curtain {
+    width: 100%;
+    background-color: #fade83;
+    padding-top: 5pt;
+    padding-bottom: 5pt;
+    text-align: center;
+}
+
+.account {
+    padding: 10pt;
+    width: 63%;
+    text-align: center;
+}
+
+.profile-description button:hover {
+    background: linear-gradient(to right, #5abfdd 51%, #a6e2f1 100%);
+}
+
+.profile-description {
+    display: block;
+    border-radius: 10px;
+    background-image: url("img/texture.png");
+    box-shadow: 0 0 10px 5px rgb(98, 188, 216);
+    line-height: 2%;
+    word-wrap: break-word;
+}
+
+.profile-description button {
+    border: 0;
+    color: white;
+    font-size: large;
+    background-color: rgb(39, 177, 211);
+    height: 40px;
+    width: 25%;
+    border-radius: 10px;
+    margin-bottom: 1%;
+    word-wrap: break-word;
+}
+
+.profile-description img {
+    width: 30%;
+}
+input {
+    font-family: 'Lucida Grande', Tahoma, Verdana, sans-serif;
+    font-size: 14px;
+}
+
+input#first-name, input#last-name, input#patronimyc, input#date-born, input#number {
+    margin: 5px;
+    padding: 0 10px;
+    width: 30%;
+    height: 34px;
+    background: white;
+}
+#profile{
+    display: none;
+}
+.change:hover {
+    cursor: pointer;
+    background: linear-gradient(to right, #26949c 51%, #6ae2f1 100%);
+}
+
+.change {
+    height: 45px;
+    width: 30%;
+    border: 1px solid rgb(37, 176, 185);
+    border-radius: 10px;
+    color: white;
+    font-size: large;
+    background-color: rgb(44, 44, 122);
+}
+.parcel-text{
+    margin: 10pt 10pt;
+    font-size: 30px;
+}

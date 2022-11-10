@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Банковский аккаунт</title>
+    <link rel="stylesheet" href="style1.css">
+</head>
+<body>
+    <div class="container block1">
+    <nav>
+        <h1>Хоум банк<img src="img/bank.png" width="30px" height="30px" alt="bank_icon"></h1>
+        <hr>
+        <div class="nav-list block2">
+            <button><span><img src="img/home.png" width="10%" alt=""> Главная</span></button>
+            <a href="index1.html">
+            <button><span><img src="img/1.png" width="10%" alt=""> Профиль</span></button>
+            </a>
+            <button><span><img src="img/control.png" width="10%" alt="">Панель управления</span></button>
+            <button><span><img src="img/guarantees.png" width="10%" alt=""> Гарантии</span></button>
+            <button><span><img src="img/invest.png" width="10%" alt=""> Инвестиции</span></button>
+        </div>
+    </nav>
+        <main>
+            <div class="profile-curtain"> Профиль пользователя</div>
+            <div class="account flex_row">
+                <div class="profile-actions">
+                    <div class="profile-description flex_column" id="profile">
+                        <img src="img/2.png" alt="Profile icon">
+                        <form id="form_names" action="index1.html">
+                            <p><input type="text" id="last-name" value="" placeholder="Фамилия"></p>
+                            <p><input type="text" id="first-name" value="" placeholder="Имя"></p>
+                            <p><input type="text" id="patronimyc" value="" placeholder="Отчество"></p>
+                            <p><input type="date" id="date-born" value="" placeholder="Дата рождения"></p>
+                            <p><input type="text" id="number" value="" placeholder="Номер телефона"></p>
+                            <div class="flex_column">
+                                <button type="submit" id="submit_bttn" class="change">Сохранить</button>
+                                <button type="reset" id="delete_btn" class="change">Удалить</button>
+                            </div>
+                        </form>
+                            <div class="flex_column">
+                        </div>
+                    </div>
+                    <div id="ready" class="profile-description flex_column">
+                        <img src="img/2.png" alt="Profile icon">
+                        <br>
+                        <p>Фамилия - <span id="last-name1"> </span></p>
+                        <p>Имя - <span id="first-name1" ></span></p>
+                        <p>Отчество - <span id="patronimyc1"> </span></p>
+                        <p>Дата рождения - <span id="date-born1"></span></p>
+                        <p>Номер телефона - <span id="number-1"></span></p><br>
+                        <button id="changeBtn" class="change">Изменить</button>
+    
+                    </div>
+                </div>
+                <div class="info">
+                    <div class="card-list">
+                        <p class="parcel-text">Кошелёк</p>
+                        <hr>
+                                <p class="parcel-text" id="money"></p>
+                                <p class="small">Mastercard Mass *3603</p>
+                            </div>
+                        </div>
+                        <div class="butt flex-row">
+                            <br>
+                            <button class="change" onclick="top()">Пополнить баланс</button>
+                            <button class="change" onclick="take()">Снять деньги</button>
+                        </div>
+                    </div>
+            </div>
+        </div>
+        </main>
+        <script src="Javascript1.js"></script>
+        <script src="Javascript2.js"></script>
+</body>
+</html>
